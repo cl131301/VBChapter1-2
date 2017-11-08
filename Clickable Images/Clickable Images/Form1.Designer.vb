@@ -22,9 +22,66 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.btnSetup = New System.Windows.Forms.Button()
+        Me.btnPunchLine = New System.Windows.Forms.Button()
+        Me.SuspendLayout()
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(110, 54)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(39, 13)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "Label1"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(119, 108)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(39, 13)
+        Me.Label2.TabIndex = 1
+        Me.Label2.Text = "Label2"
+        '
+        'btnSetup
+        '
+        Me.btnSetup.Location = New System.Drawing.Point(63, 199)
+        Me.btnSetup.Name = "btnSetup"
+        Me.btnSetup.Size = New System.Drawing.Size(75, 23)
+        Me.btnSetup.TabIndex = 2
+        Me.btnSetup.Text = "Button1"
+        Me.btnSetup.UseVisualStyleBackColor = True
+        '
+        'btnPunchLine
+        '
+        Me.btnPunchLine.Location = New System.Drawing.Point(166, 199)
+        Me.btnPunchLine.Name = "btnPunchLine"
+        Me.btnPunchLine.Size = New System.Drawing.Size(75, 23)
+        Me.btnPunchLine.TabIndex = 3
+        Me.btnPunchLine.Text = "Punch Line"
+        Me.btnPunchLine.UseVisualStyleBackColor = True
+        '
+        'Form1
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.ClientSize = New System.Drawing.Size(284, 262)
+        Me.Controls.Add(Me.btnPunchLine)
+        Me.Controls.Add(Me.btnSetup)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.Label1)
+        Me.Name = "Form1"
         Me.Text = "Form1"
+        Me.ResumeLayout(False)
+        Me.PerformLayout()
+
     End Sub
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents btnSetup As System.Windows.Forms.Button
+    Friend WithEvents btnPunchLine As System.Windows.Forms.Button
 
 End Class
